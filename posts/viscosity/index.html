@@ -4,11 +4,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Posts - Joey Blog</title>
+    <title>混合溶液粘度 - Joey Blog</title>
 
     
     
-    <meta name="description" content="" />
+    <meta name="description" content="关于混合溶液的粘度预测是一个古老的话题，很朴素的，类似密度等常规物性，我们预计混合溶液的粘度在理想情况下，应该具有线性分布：
+以两组分为例：
+$$ \eta = x\eta_{\text{1}} &#43; (1-x)\eta_{\text{2}} $$ 但事实上，实际混合溶液的粘度都低于两者的线性叠加
+https://pubs.acs.org/doi/epdf/10.1021/ja02254a001
+后来，Arrhenius在1887年提出了基于热力学的混合粘度理论公式：
+$$ \log\eta = x\log\eta_{\text{1}} &#43; (1-x)\eta_{\text{2}} $$
+在1949年，Nature: Mixture Law for Viscosity对参数进行了局部修正 $$ \log\eta = N_1\log\eta_{\text{1}} &#43; N_2\log\eta_{\text{2}}&#43;N_1N_2d $$
+这一点推测是由于分子大小和流动性的差异导致混合体系的粘度相较线性值下降更为明显
+在溶解溶质的溶液中，对于稀溶液，粘度可以被下述公式计算得到 $$ \frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 &#43; A\sqrt{c} $$ 当浓度增加时， $$ \frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 &#43; A\sqrt{c} &#43; Bc $$ 当浓度进一步增加时， $$ \frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 &#43; A\sqrt{c} &#43; Bc &#43; Cc^2 $$" />
     <meta name="author" content="" />
     
 
@@ -52,11 +60,13 @@
 </nav>
 <div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
         <div class="max-w:700 w:full box:content-box">
-<div>
-    <article class="box:border-box pt:32 w:full">
-        <header class="mb:32">
-            <div class="font:40 font:extrabold">Posts</div>
-        </header><div class="
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">混合溶液粘度</div>
+        <div class="mt:16 f:fade-60">
+            <time>Jun 19, 2024</time>
+            </div>
+    </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
     _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
@@ -93,26 +103,36 @@
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"></div></article>
-    <ul>
-                <li>
-                    <div class="mb:16 py:24 f:fade-30 f:fade-10:hover transition:150ms;ease-in">
-                        <a class="f:24 font:semibold" href="https://jojochem.cn/posts/viscosity/">
-                            <div>混合溶液粘度</div>
-                        </a>
-                        <div class="mt:12 f:fade-70"><time>Jun 19, 2024</time></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="mb:16 py:24 f:fade-30 f:fade-10:hover transition:150ms;ease-in">
-                        <a class="f:24 font:semibold" href="https://jojochem.cn/posts/esw/">
-                            <div></div>
-                        </a>
-                        <div class="mt:12 f:fade-70"><time>Jan 1, 1</time></div>
-                    </div>
-                </li>
-    </ul>
-</div>
+"><p>关于混合溶液的粘度预测是一个古老的话题，很朴素的，类似密度等常规物性，我们预计混合溶液的粘度在理想情况下，应该具有线性分布：</p>
+<p>以两组分为例：</p>
+<p>$$
+\eta = x\eta_{\text{1}} + (1-x)\eta_{\text{2}}
+$$
+但事实上，实际混合溶液的粘度都低于两者的线性叠加</p>
+<p><a href="https://pubs.acs.org/doi/epdf/10.1021/ja02254a001">https://pubs.acs.org/doi/epdf/10.1021/ja02254a001</a></p>
+<hr>
+<p>后来，Arrhenius在1887年提出了基于热力学的混合粘度理论公式：</p>
+<p>$$
+\log\eta = x\log\eta_{\text{1}} + (1-x)\eta_{\text{2}}
+$$</p>
+<p>在1949年，Nature: Mixture Law for Viscosity对参数进行了局部修正
+$$
+\log\eta = N_1\log\eta_{\text{1}} + N_2\log\eta_{\text{2}}+N_1N_2d
+$$</p>
+<p>这一点推测是由于分子大小和流动性的差异导致混合体系的粘度相较线性值下降更为明显</p>
+<p>在溶解溶质的溶液中，对于稀溶液，粘度可以被下述公式计算得到
+$$
+\frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 + A\sqrt{c}
+$$
+当浓度增加时，
+$$
+\frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 + A\sqrt{c} + Bc
+$$
+当浓度进一步增加时，
+$$
+\frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 + A\sqrt{c} + Bc + Cc^2
+$$</p>
+</div></article>
 <footer class="py:24">
     <div class="f:fade-30 f:14 mb:8"></div>
     <div class="f:fade-60 f:12">Theme <a class="f:bold" href="https://github.com/serkodev/holy" _target="_blank">Holy</a></div>
