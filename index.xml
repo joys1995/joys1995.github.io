@@ -6,8 +6,15 @@
     <description>Recent content on Joey Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jul 2024 01:47:15 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2024 09:20:24 +0000</lastBuildDate>
     <atom:link href="https://jojochem.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Corr</title>
+      <link>https://jojochem.cn/posts/corr/</link>
+      <pubDate>Wed, 09 Oct 2024 09:20:24 +0000</pubDate>
+      <guid>https://jojochem.cn/posts/corr/</guid>
+      <description>Stern-Geary测量腐蚀速率的原理主要基于电化学理论，尤其是它通过测量极化电阻（(R_p)）来推导出腐蚀速率。该方法依赖于Stern-Geary方程，该方程将腐蚀电流密度（(i_{\text{corr}})）与极化电阻联系起来。核心原理可以分为几个关键步骤来解释：&#xA;1. 极化电阻的测量： 在电化学腐蚀过程中，当施加一个非常小的电势扰动（正负数十毫伏）到腐蚀电池中时，系统会发生电流响应。这个电流响应的斜率，即电位和电流的比值，就称为极化电阻（(R_p)）。极化电阻可以通过以下公式定义：&#xA;$$ R_p = \left( \frac{dE}{dI} \right){\text{at } E{\text{corr}}} $$&#xA;其中：&#xA;(E) 是电极电位， (I) 是电流， (E_{\text{corr}}) 是腐蚀电位。 这种电位-电流斜率反映了系统对极化扰动的抵抗性，它与腐蚀速率密切相关。&#xA;2. Stern-Geary方程： 通过Stern-Geary方程，极化电阻可以与腐蚀电流密度（(i_{\text{corr}})）直接联系起来，公式如下：&#xA;$$ i_{\text{corr}} = \frac{B}{R_p} $$&#xA;其中：&#xA;(i_{\text{corr}}) 是腐蚀电流密度（单位：A/cm²）， (B) 是一个常数，称为Stern-Geary常数，通常根据Tafel斜率计算得出， (R_p) 是极化电阻。 3. Stern-Geary常数 (B)： (B) 常数的值取决于阳极和阴极的Tafel斜率（(b_a) 和 (b_c)），通过以下公式计算：&#xA;$$ B = \frac{b_a \cdot b_c}{2.303(b_a + b_c)} $$&#xA;其中：&#xA;(b_a) 和 (b_c) 分别是阳极和阴极反应的Tafel斜率，反映了电极反应速度随电位变化的敏感性。 4. 计算腐蚀速率： 一旦得到了腐蚀电流密度 (i_{\text{corr}})，就可以进一步计算腐蚀速率。腐蚀速率通常用金属的失重或厚度减少来表示，公式如下：&#xA;$$ v_{\text{corrosion}} = \frac{K \cdot i_{\text{corr}} \cdot \text{Eq.Wt.}}{\rho \cdot A} $$</description>
+    </item>
     <item>
       <title>Carbonate</title>
       <link>https://jojochem.cn/posts/carbonate/</link>
