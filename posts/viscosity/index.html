@@ -13,10 +13,12 @@
 $$ \eta = x\eta_{\text{1}} &#43; (1-x)\eta_{\text{2}} $$ 但事实上，实际混合溶液的粘度都低于两者的线性叠加
 https://pubs.acs.org/doi/epdf/10.1021/ja02254a001
 后来，Arrhenius在1887年提出了基于热力学的混合粘度理论公式：
-$$ \log\eta = x\log\eta_{\text{1}} &#43; (1-x)\eta_{\text{2}} $$
+$$ \log\eta = x\log\eta_{\text{1}} &#43; (1-x)\log\eta_{\text{2}} $$
 在1949年，Nature: Mixture Law for Viscosity对参数进行了局部修正 $$ \log\eta = N_1\log\eta_{\text{1}} &#43; N_2\log\eta_{\text{2}}&#43;N_1N_2d $$
 这一点推测是由于分子大小和流动性的差异导致混合体系的粘度相较线性值下降更为明显
-在溶解溶质的溶液中，对于稀溶液，粘度可以被下述公式计算得到 $$ \frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 &#43; A\sqrt{c} $$ 当浓度增加时， $$ \frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 &#43; A\sqrt{c} &#43; Bc $$ 当浓度进一步增加时， $$ \frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 &#43; A\sqrt{c} &#43; Bc &#43; Cc^2 $$" />
+在溶解溶质的溶液中，对于稀溶液，粘度可以被下述公式计算得到 $$ \frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 &#43; A\sqrt{c} $$ 当浓度增加时， $$ \frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 &#43; A\sqrt{c} &#43; Bc $$ 当浓度进一步增加时， $$ \frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 &#43; A\sqrt{c} &#43; Bc &#43; Cc^2 $$
+关于混合溶液粘度的预测规律，其理论模型的发展体现了从理想假设到实际分子相互作用的逐步深化。以下从科学原理角度对相关模型进行解析：
+一、理想线性模型的局限性 假设混合溶液粘度满足线性叠加： $$ \eta = x\eta_{1} &#43; (1-x)\eta_{2} $$ 此模型隐含以下理想条件：" />
     <meta name="author" content="" />
     
 
@@ -110,10 +112,9 @@ $$ \log\eta = x\log\eta_{\text{1}} &#43; (1-x)\eta_{\text{2}} $$
 $$
 但事实上，实际混合溶液的粘度都低于两者的线性叠加</p>
 <p><a href="https://pubs.acs.org/doi/epdf/10.1021/ja02254a001">https://pubs.acs.org/doi/epdf/10.1021/ja02254a001</a></p>
-<hr>
 <p>后来，Arrhenius在1887年提出了基于热力学的混合粘度理论公式：</p>
 <p>$$
-\log\eta = x\log\eta_{\text{1}} + (1-x)\eta_{\text{2}}
+\log\eta = x\log\eta_{\text{1}} + (1-x)\log\eta_{\text{2}}
 $$</p>
 <p>在1949年，Nature: Mixture Law for Viscosity对参数进行了局部修正
 $$
@@ -132,14 +133,116 @@ $$
 $$
 \frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 + A\sqrt{c} + Bc + Cc^2
 $$</p>
-</div></article>
+<p>关于混合溶液粘度的预测规律，其理论模型的发展体现了从理想假设到实际分子相互作用的逐步深化。以下从科学原理角度对相关模型进行解析：</p>
+<hr>
+<h3 id="一理想线性模型的局限性">一、理想线性模型的局限性</h3>
+<p>假设混合溶液粘度满足线性叠加：
+$$
+\eta = x\eta_{1} + (1-x)\eta_{2}
+$$
+此模型隐含以下理想条件：</p>
+<ol>
+<li>组分分子体积与流动性完全相同；</li>
+<li>分子间无相互作用，混合后排列方式与纯组分一致。</li>
+</ol>
+<p><strong>实际偏差原因</strong>：</p>
+<ul>
+<li><strong>分子尺寸差异</strong>：若组分1分子远大于组分2，混合后小分子填充大分子间隙，降低流动阻力；</li>
+<li><strong>分子间作用力</strong>：若组分间存在吸引力或氢键，可能形成松散网络结构，反而增加粘度（如甘油-水体系）；</li>
+<li><strong>自由体积效应</strong>：混合后分子堆积效率提高，自由体积增加，导致粘度下降。</li>
+</ul>
+<hr>
+<h3 id="二arrhenius对数模型1887">二、Arrhenius对数模型（1887）</h3>
+<p>$$
+\log\eta = x\log\eta_{1} + (1-x)\log\eta_{2}
+$$
+<strong>物理意义</strong>：</p>
+<ul>
+<li>将粘度视为分子流动性（$\propto 1/\eta$）的<strong>几何平均</strong>，隐含假设混合后分子运动模式独立；</li>
+<li>适用于组分间相互作用较弱、分子极性相近的体系（如苯-甲苯）。</li>
+</ul>
+<p><strong>局限性</strong>：</p>
+<ul>
+<li>忽略分子尺寸差异和强相互作用；</li>
+<li>对高粘度混合物（如聚合物溶液）预测偏差显著。</li>
+</ul>
+<hr>
+<h3 id="三修正的交叉项模型1949">三、修正的交叉项模型（1949）</h3>
+<p>$$
+\log\eta = N_1\log\eta_{1} + N_2\log\eta_{2} + N_1N_2d
+$$
+<strong>改进点</strong>：</p>
+<ul>
+<li>引入交叉项 $N_1N_2d$，其中 $d$ 为相互作用参数；</li>
+<li>$d &lt; 0$ 表示分子间作用降低粘度（如乙醇-水），$d &gt; 0$ 则反之（如离子液体混合物）。</li>
+</ul>
+<p><strong>科学原理</strong>：</p>
+<ul>
+<li><strong>超额粘度（Excess Viscosity）</strong>：反映非理想混合导致的粘度变化；</li>
+<li><strong>分子缔合效应</strong>：例如水分子插入乙醇氢键网络，破坏原有结构，降低流动阻力。</li>
+</ul>
+<hr>
+<h3 id="四稀溶液粘度的浓度依赖性">四、稀溶液粘度的浓度依赖性</h3>
+<h4 id="1-极稀溶液einstein区域">1. 极稀溶液（Einstein区域）</h4>
+<p>$$
+\frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 + A\sqrt{c}
+$$</p>
+<ul>
+<li><strong>适用条件</strong>：$c \to 0$，溶质分子孤立分散；</li>
+<li><strong>物理意义</strong>：$A\sqrt{c}$ 反映溶质分子对溶剂流动的扰动，如带电粒子的电粘效应（Debye-Hückel理论）。</li>
+</ul>
+<h4 id="2-中等浓度huggins方程">2. 中等浓度（Huggins方程）</h4>
+<p>$$
+\frac{\eta_{\text{S}}}{\eta_{\text{O}}} = 1 + Bc + Cc^2
+$$</p>
+<ul>
+<li><strong>高阶项来源</strong>：
+<ul>
+<li>$Bc$：溶质-溶质流体力学相互作用；</li>
+<li>$Cc^2$：多体碰撞和局部有序结构形成。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="五分子动力学视角">五、分子动力学视角</h3>
+<ol>
+<li><strong>自由体积理论</strong>：混合后分子堆积更高效，自由体积增加，粘度降低；</li>
+<li><strong>过渡态理论</strong>：流动活化能 $\Delta G^<em>$ 满足：
+$$
+\eta \propto \exp\left(\frac{\Delta G^</em>}{RT}\right)
+$$
+混合可能降低平均活化能，导致 $\eta$ 非线性下降。</li>
+</ol>
+<hr>
+<h3 id="六现代模型与挑战">六、现代模型与挑战</h3>
+<ol>
+<li><strong>群体贡献法（Group Contribution Methods）</strong>：通过基团相互作用预测混合物性质；</li>
+<li><strong>分子模拟</strong>：采用粗粒化模型计算剪切粘度；</li>
+<li><strong>机器学习</strong>：基于实验数据库训练黑箱模型，但可解释性受限。</li>
+</ol>
+<hr>
+<h3 id="结论">结论</h3>
+<p>混合溶液粘度的非理想性本质源于分子尺度相互作用和动态耦合。经典模型通过引入对数变换、交叉项或浓度级数展开，逐步逼近实际体系。</p>
+</div>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],  
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        packages: {'[+]': ['ams', 'boldsymbol']}  
+      },
+      startup: {
+        typeset: false  
+      }
+    };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script><script>MathJax.typesetPromise()</script> 
+</article>
 <footer class="py:24">
     <div class="f:fade-30 f:14 mb:8"></div>
     <div class="f:fade-60 f:12">Theme <a class="f:bold" href="https://github.com/serkodev/holy" _target="_blank">Holy</a></div>
 </footer>
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script></div>
+</div>
     </div>
 </body>
 
