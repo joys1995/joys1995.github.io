@@ -1,3 +1,51 @@
+# Jekyll Configuration
 title: 我的博客
-description: 分享生活与技术，记录成长的点滴
+description: 分享电化学与电池技术，记录学习与研究
 theme: minima
+url: "https://www.jojochem.cn"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  input: GFM
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Collections
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: true
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  - README.md
+
+# Timezone
+timezone: Asia/Shanghai
+
+# Author
+author:
+  name: Joey
+  email: 

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<article class="post-content">
+    <h2>{{ page.title }}</h2>
+    <p class="post-meta">发布于 {{ page.date | date: "%Y-%m-%d" }}</p>
+    
+    <div class="content">
+        {{ content }}
+    </div>
+</article>
+
+<div class="back-link">
+    <a href="{{ '/' | relative_url }}">← 返回首页</a>
+</div>
