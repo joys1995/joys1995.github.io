@@ -1,6 +1,6 @@
 ---
 title: 电池中的迁移、扩散离子通量分析（仿真视角）
-date: 2026-03-13 10:00:00 +0800
+date: 2025-03-13 10:00:00 +0800
 categories: [电化学, 仿真]
 tags: [P2D, 迁移, 扩散, 物质通量, 偏微分方程]
 ---
@@ -31,7 +31,7 @@ $$
 ### 1.2 浓差过电势驱动项
 
 $$
-\mathbf{N}_{\text{conc}} = \frac{2RT}{F^2} t_+(1-t_+)\left(1+\frac{d\ln f}{d\ln c_e}\right)\kappa_{\text{eff}} \nabla \ln c_e
+\mathbf{N}_{\text{conc}} = \frac{t_+}{F}\frac{2RT}{F}(1-t_+)\left(1+\frac{d\ln f}{d\ln c_e}\right)\kappa_{\text{eff}} \nabla \ln c_e= \frac{2RT}{F^2} t_+(1-t_+)\left(1+\frac{d\ln f}{d\ln c_e}\right)\kappa_{\text{eff}} \nabla \ln c_e
 $$
 
 *   **物理意义**：
